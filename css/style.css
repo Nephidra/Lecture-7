@@ -1,0 +1,43 @@
+body {
+    background-image: url("../images/street.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    
+   }
+
+.walkingman{
+    position: absolute;
+    left: 100px;
+    z-index: 1;
+    height: 25%;
+    width: 25%;
+    left: 500px;
+    top: 300px;
+    animation-name: walking;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+}
+
+   @keyframes walking {
+    0% {top: 300px}
+    100% {top: 450px; left: 600px}
+   }
+
+.kid{
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    left: 300px;
+    top: 400px;
+    z-index: 2;
+    animation-name: walkingkid;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+    @keyframes walkingkid {
+        0% {top: 470px}
+        100% {top: 400px; left: 150px;}
+    }
